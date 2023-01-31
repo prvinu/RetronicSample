@@ -1,3 +1,0 @@
-(function($,Drupal){'use strict';Drupal.behaviors.case_studies_slideshow={attach:function(context){var $slide_show=$('.js-case-studies--slideshow',context);function $nav_position(){var $nav=$slide_show.find('.slick-prev, .slick-next',context);function $nav_position_init(){var $current_image=$('.slick-current .js-csl-img',context);var $current_image_h=$current_image.height();$nav.css('top',$current_image_h/2);}
-$nav_position_init();$(window).on('resize',$nav_position_init);}
-$slide_show.slick({mobileFirst:true,draggable:false,responsive:[{breakpoint:1025,settings:{draggable:false,}},]});}};})(jQuery,Drupal);
